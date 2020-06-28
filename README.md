@@ -5,6 +5,7 @@
 
 #### anyenvのインストール
 `brew install anyenv`
+
 `anyenv install --init`
 
 `.bash_profile`に追加
