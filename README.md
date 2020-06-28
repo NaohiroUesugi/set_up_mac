@@ -1,5 +1,6 @@
 # macの初期設定
 
+# 本体設定
 ## マウスの感度を早める。(10で使っている)
 `defaults write -g com.apple.mouse.scaling 10`
 
@@ -53,3 +54,7 @@ nodenv local 10.16.0
 
 ## yarn
 `brew install yarn`
+
+# アプリ関係
+## Karabiner-Elements キーマッピングを変更。
+`~/.config/karabiner/karabiner.json`に記述。
