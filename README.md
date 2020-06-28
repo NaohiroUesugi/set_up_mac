@@ -48,6 +48,8 @@ nodenv global 10.16.0
 cd プロジェクトへ移動
 nodenv local 10.16.0
 ```
+##### `nodenv: default-packages file not found`と出る場合
+`touch $(nodenv root)/default-packages`
 
 ## yarn
 `brew install yarn`
