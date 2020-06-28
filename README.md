@@ -3,6 +3,9 @@
 ## マウスの感度を早める。(10で使っている)
 `defaults write -g com.apple.mouse.scaling 10`
 
+## Homebrew
+`https://brew.sh/index_ja`
+
 ## anyenvのインストール
 ```
 brew install anyenv
