@@ -1,9 +1,9 @@
 # macの初期設定
 
-### マウスの感度を早める。(10で使っている)
+## マウスの感度を早める。(10で使っている)
 `defaults write -g com.apple.mouse.scaling 10`
 
-### anyenvのインストール
+## anyenvのインストール
 `brew install anyenv`
 
 `anyenv install --init`
@@ -16,7 +16,7 @@ eval "$(anyenv init -)"
 
 `anyenv install --update`
 
-`anyenv update`
+### anyenv update`
 https://github.com/znz/anyenv-update
 
 `plagin`ディレクトリを作成。
