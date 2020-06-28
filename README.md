@@ -1,5 +1,14 @@
 # macの初期設定
 
+# アプリ関係
+### [Karabiner-Elements](https://karabiner-elements.pqrs.org/) (キーマッピングを変更。)
+`~/.config/karabiner/karabiner.json`に記述。
+### [iterm2](https://www.iterm2.com/) (ターミナル)
+### [chrome](https://www.google.co.jp/chrome/?brand=CHBD&gclid=CjwKCAjw_-D3BRBIEiwAjVMy7Nk6gogUSP6EgujmhI78KviN03E_XtkdjiU1gGjtYl_Dy9NPvwxfhRoCkbsQAvD_BwE&gclsrc=aw.ds) (ブラウザ)
+### [vscode](https://code.visualstudio.com/download) (エディタ)
+### [xcode] (インストールに時間かかる)
+### []() ()
+
 # 本体設定
 ## マウスの感度を早める。(10で使っている)
 `defaults write -g com.apple.mouse.scaling 10`
@@ -54,7 +63,3 @@ nodenv local 10.16.0
 
 ## yarn
 `brew install yarn`
-
-# アプリ関係
-## [Karabiner-Elements](https://karabiner-elements.pqrs.org/) (キーマッピングを変更。)
-`~/.config/karabiner/karabiner.json`に記述。
