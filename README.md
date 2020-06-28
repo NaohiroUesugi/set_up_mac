@@ -4,9 +4,10 @@
 `defaults write -g com.apple.mouse.scaling 10`
 
 ## anyenvのインストール
-`brew install anyenv`
-
-`anyenv install --init`
+```
+brew install anyenv
+anyenv install --init
+```
 
 `.bash_profile`に追加
 ```
