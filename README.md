@@ -4,7 +4,7 @@
 `defaults write -g com.apple.mouse.scaling 10`
 
 ## Homebrew
-`https://brew.sh/index_ja`
+https://brew.sh/index_ja
 
 ## anyenvのインストール
 ```
