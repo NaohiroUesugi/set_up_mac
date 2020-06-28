@@ -35,3 +35,16 @@ rbenv global 2.6.5 <-全体で使う場合
 cd プロジェクトへ移動
 rbenv local 2.6.5 <- プロジェクトごとで使う場合。
 ```
+
+### nodenv
+```
+anyenv install nodenv
+nodenv install 10.16.0
+nodenv versions
+nodenv global 10.16.0
+cd プロジェクトへ移動
+nodenv local 10.16.0
+```
+
+## yarn
+`brew install yarn`
