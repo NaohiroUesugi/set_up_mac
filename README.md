@@ -16,7 +16,7 @@ eval "$(anyenv init -)"
 
 `anyenv install --update`
 
-### anyenv update`
+### anyenv update
 https://github.com/znz/anyenv-update
 
 `plagin`ディレクトリを作成。
