@@ -56,5 +56,5 @@ nodenv local 10.16.0
 `brew install yarn`
 
 # アプリ関係
-## (Karabiner-Elements)[https://karabiner-elements.pqrs.org/] (キーマッピングを変更。)
+## [Karabiner-Elements](https://karabiner-elements.pqrs.org/) (キーマッピングを変更。)
 `~/.config/karabiner/karabiner.json`に記述。
