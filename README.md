@@ -7,8 +7,8 @@
 #### [chrome](https://www.google.co.jp/chrome/?brand=CHBD&gclid=CjwKCAjw_-D3BRBIEiwAjVMy7Nk6gogUSP6EgujmhI78KviN03E_XtkdjiU1gGjtYl_Dy9NPvwxfhRoCkbsQAvD_BwE&gclsrc=aw.ds) (ブラウザ)
 #### [vscode](https://code.visualstudio.com/download) (エディタ)
 #### [xcode] (インストールに時間かかる)
-#### [clipy](https://clipy.softonic.jp/mac) (クリップボード)
-#### []() ()
+#### [clipy](https://clipy-app.com/) (クリップボード)
+#### []()
 # 本体設定
 ## マウスの感度を早める。(10で使っている)
 `defaults write -g com.apple.mouse.scaling 10`
