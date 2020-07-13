@@ -17,6 +17,21 @@
 ## Homebrew
 https://brew.sh/index_ja
 
+## zshに変更
+```
+chsh -s /bin/zsh
+echo $SHELL <- 確認
+```
+bashに戻す場合は
+`chsh -s /bin/bash`
+.bash_profileの設定をzshにコピー
+`cat .bash_profile >> .zprofile`
+.zshrcに以下を追加。(補完を強くしてくれる)
+```
+autoload -Uz compinit
+compinit
+```
+
 ## anyenvのインストール
 ```
 brew install anyenv
