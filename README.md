@@ -32,6 +32,13 @@ autoload -Uz compinit
 compinit
 ```
 
+## スクリーンショットの保存先を変更
+```
+cd Pictures
+mkdir ScreenShots
+defaults write com.apple.screencapture location ~/Pictures/ScreenShots
+```
+
 ## anyenvのインストール
 ```
 brew install anyenv
