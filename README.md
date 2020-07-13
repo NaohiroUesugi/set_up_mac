@@ -24,7 +24,7 @@ echo $SHELL <- 確認
 ```
 bashに戻す場合は
 `chsh -s /bin/bash`
-.bash_profileの設定をzshにコピー
+既に.bash_profileがある場合.bash_profileの設定をzshにコピー
 `cat .bash_profile >> .zprofile`
 .zshrcに以下を追加。(補完を強くしてくれる)
 ```
@@ -45,7 +45,7 @@ brew install anyenv
 anyenv install --init
 ```
 
-`.bash_profile`に追加
+`.zprofile`に追加
 ```
 export PATH="/usr/local/bin:$PATH"
 eval "$(anyenv init -)"
