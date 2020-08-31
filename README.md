@@ -15,7 +15,7 @@
 ```
 defaults write -g com.apple.mouse.scaling 10 // マウスのカーソル
 defaults write -g InitialKeyRepeat -int 10 // 最初のキーの読み取り速度(ms)
-defaults write -g KeyRepeat -float 1.5 //　繰り返すキーの読み取り速度(ms)
+defaults write -g KeyRepeat -float 1.7 //　繰り返すキーの読み取り速度(ms)
 
 // 以下で確認
 defaults read -g KeyRepeat
