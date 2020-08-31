@@ -11,8 +11,12 @@
 #### [clipy](https://clipy-app.com/) (クリップボード)
 #### []()
 # 本体設定
-## マウスの感度を早める。(10で使っている)
-`defaults write -g com.apple.mouse.scaling 10`
+## Mac defalutsの設定
+```
+defaults write -g com.apple.mouse.scaling 10
+defaults write -g InitialKeyRepeat -int 10
+defaults write -g KeyRepeat -int 1
+```
 
 ## Homebrew
 https://brew.sh/index_ja
