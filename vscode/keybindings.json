@@ -1,0 +1,55 @@
+// 既定値を上書きするには、このファイル内にキー バインドを挿入します
+[
+    // // サイドバーへの移動 (ctrl+hをhにしてctrlを話すだけで切り替わる)
+    // {
+    //     "key": "ctrl+l",
+    //     "command": "workbench.action.focusSideBar",
+    //     "when": "editorFocus && vim.mode == 'Normal'"
+    // },
+    // // サイドバーからの移動 (ctrl+hをhにしてctrlを話すだけで切り替わる)
+    // {
+    //     "key": "ctrl+i",
+    //     "command": "workbench.action.focusFirstEditorGroup",
+    //     "when": "!editorFocus && !terminalFocus && vim.mode == 'Normal'"
+    // },
+    {
+        "key": "ctrl+w ctrl+l",
+        "command": "workbench.action.focusFirstEditorGroup",
+        "when": "!editorFocus"
+    },
+    // 候補のフォーカスを下へ移動
+    {
+        "key": "ctrl+n",
+        "command": "selectNextSuggestion",
+        "when": "editorTextFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible"
+    },
+    // 候補のフォーカスを上へ移動
+    {
+        "key": "ctrl+p",
+        "command": "selectPrevSuggestion",
+        "when": "editorTextFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible"
+    },
+    // リスト系の選択のフォーカスを下へ移動
+    {
+        "key": "ctrl+n",
+        "command": "list.focusDown",
+        "when": "listFocus"
+    },
+    // 検索画面の選択のフォーカスを下へ移動
+    {
+        "key": "ctrl+n",
+        "command": "search.focus.nextInputBox",
+        "when": "inputBoxFocus && searchViewletVisible"
+    },
+    // タブ切り替え
+    {
+        "key": "ctrl+p",
+        "command": "workbench.action.previousEditor",
+        "when": "editorFocus && vim.mode == 'Normal'"
+    },
+    {
+        "key": "ctrl+n",
+        "command": "workbench.action.nextEditor",
+        "when": "editorFocus && vim.mode == 'Normal'"
+    },
+]
