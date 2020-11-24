@@ -1,0 +1,145 @@
+{
+  // "diffEditor.renderSideBySide": false, // Git の差分を行内に表示
+  "editor.renderControlCharacters": true, // 制御文字を表示
+  "emmet.showSuggestionsAsSnippets": true, // Emmet の候補を表示
+  "emmet.triggerExpansionOnTab": true, // TAB キーで Emmet を展開できるようにする
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  //========================================================================
+  // vscodeのeditorの設定
+  //========================================================================
+  "vim.useSystemClipboard": true, // コピペができるようにする
+  "vim.hlsearch": true,
+  "vim.searchHighlightColor": "rgba(160, 30, 200, 0.5)", // 検索のハイライトカラー
+  "vim.visualstar": true, // visualモードで選択中の時に*や#が使えるようになる
+  "vim.highlightedyank.enable": true, // yank時に強調して表示してくれる
+  "vim.highlightedyank.color": "rgba(160, 30, 200, 0.5)", // yank時のカラー変更
+  "vim.highlightedyank.duration": 100, // yank時の期間を変更
+  // "vim.ignorecase": false, // 検索の時に大文字小文字を区別する
+  "editor.wordWrap": "on",
+  "vim.leader": "<space>",
+  // "vim.cursorStylePerMode.normal": "block-outline", // Nomalモード時のカーソルタイプを変更
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<Leader>", "s"],
+      "commands": [":split"]
+    },
+    {
+      "before": ["<Leader>", "v"],
+      "commands": [":vsplit"]
+    },
+    {
+      "before": ["x"],
+      "after": ["\"", "_", "x"]
+    },
+    {
+      "before": ["d"],
+      "after": ["\"", "_", "d"]
+    },
+    {
+      "before": ["<Leader>", "e"],
+      "commands": ["workbench.action.focusSideBar"],
+      "when": ["editorFocus"]
+    },
+    {
+      "before": ["<Leader>", "w"],
+      "commands": ["workbench.action.focusActiveEditorGroup"],
+      "when": ["!editorFocus"]
+    },
+    {
+      "before": ["<leader>", "b", "t"],
+      "commands": ["bookmarks.toggle"]
+    },
+    {
+      "before": ["<leader>", "b", "l"],
+      "commands": ["bookmarks.listFromAllFiles"]
+    },
+    {
+      "before": ["<leader>", "q"],
+      "commands": [":q"]
+    }
+    // {"before": ["<Leader>", "f"],"commands": ["fzf-quick-open.runFzfAddWorkspaceFolderPwd"],"when":["editorFocus"]},
+  ],
+  // insertモードでの設定
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "j"],
+      "after": ["<Esc>"]
+    } // j+jでEscに
+  ],
+  // ds'で'を削除
+  // di'で'の中を削除
+  // cs'[で'を[に変換
+  // ysiw'で文字を囲む
+  "vim.surround": true,
+  // <leader><leader> s <char>で検索
+  // <leader><leader> f <char>でカーソルより先を検索してマーク
+  // <leader><leader> F <char>でカーソルより前を検索してマーク
+  // <leader><leader> w でカーソルより先の単語をマーク
+  // <leader><leader> b でカーソルより前の単語をマーク
+  // <leader><leader> j でカーソルより先の行頭をマーク
+  // <leader><leader> k でカーソルより前の行頭をマーク
+  "vim.easymotion": true,
+  "vim.easymotionKeys": "abcdefghijklmnopqrstuvwxyz:",
+  "vim.incsearch": true,
+  // "vim.easymotionMarkerBackgroundColor": "#391445", // esymotion検索の時のボックスの背景色
+  // "vim.easymotionMarkerForegroundColorOneChar": "#cfa2de",
+  // "vim.easymotionMarkerForegroundColorTwoChar": "#cfa2de",
+  "vim.easymotionDimBackground": true,
+  //========================================================================
+  // vscodeのStatusBarの設定(パフォーマンスが悪くなるので気を付ける)
+  //========================================================================
+  "vim.statusBarColorControl": false,
+  "vim.statusBarColors.normal": ["#8FBCBB", "#434C5E"],
+  "vim.statusBarColors.insert": "#BF616A",
+  "vim.statusBarColors.visual": "#B48EAD",
+  "vim.statusBarColors.visualline": "#B48EAD",
+  "vim.statusBarColors.visualblock": "#A3BE8C",
+  "vim.statusBarColors.replace": "#D08770",
+  "vim.statusBarColors.commandlineinprogress": "#007ACC",
+  "vim.statusBarColors.searchinprogressmode": "#007ACC",
+  "vim.statusBarColors.easymotionmode": "#007ACC",
+  "vim.statusBarColors.easymotioninputmode": "#007ACC",
+  "vim.statusBarColors.surroundinputmode": "#007ACC",
+  "vim.autoSwitchInputMethod.enable": true,
+  "vim.autoSwitchInputMethod.defaultIM": "com.apple.inputmethod.Kotoeri.Roman",
+  "vim.autoSwitchInputMethod.obtainIMCmd": "/usr/local/bin/im-select",
+  "vim.autoSwitchInputMethod.switchIMCmd": "/usr/local/bin/im-select {im}",
+  // INSERTモードを抜けると自動で英語に切り替える
+  "editor.fontSize": 14.5,
+  "window.zoomLevel": -1,
+  "editor.tabSize": 2,
+  "workbench.editor.showTabs": true,
+  "diffEditor.ignoreTrimWhitespace": false,
+  // "vim.camelCaseMotion.enable": true // camelCaseの移動を楽にしてくれる
+  //========================================================================
+  // その他VscodeVimのコマンド
+  //========================================================================
+  // gbでマルチカーソル
+
+  //========================================================================
+  // COLOR に関して
+  // https://code.visualstudio.com/api/references/theme-color
+  //========================================================================
+  "workbench.colorCustomizations": {
+    "statusBar.background": "#8FBCBB",
+    "statusBar.noFolderBackground": "#8FBCBB",
+    "statusBar.debuggingBackground": "#8FBCBB",
+    "statusBar.foreground": "#434C5E",
+    "[Rapture]": {
+      "editorUnnecessaryCode.border": "#dd7aab"
+    }
+  },
+  "editor.tokenColorCustomizations": {
+    "[Rapture]": {
+      "comments": "#637282"
+    }
+  },
+  "editor.showUnused": true,
+  "workbench.colorTheme": "Rapture"
+}
